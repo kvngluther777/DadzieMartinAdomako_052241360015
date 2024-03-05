@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><img src="kstu.png" alt="Image Description" style="width: 40px; height: 40px;">KUMASI TECHNICAL UNIVERSITY</h1>
+    <h2>FACULTY OF APPLIED SCIENCE AND TECHNOLOGY<br>DEPARTMENTAL DUES AND PAYMENTS</h2>
+    
+    <div class="login-container">
+        <form id="login-form">
+            <h2>Student Login</h2>
+            <div class="form-group">
+                <label for="student-id">Student ID:</label>
+                <input type="text" id="student-id" name="student-id" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginForm = document.getElementById('login-form');
+
+            loginForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                // Get input values
+                const studentId = document.getElementById('student-id').value;
+                const password = document.getElementById('password').value;
+
+                // Check login credentials (this is just a placeholder example)
+                if (studentId === 'yourStudentID' && password === 'yourPassword') {
+                    // Prompt for payment
+                    const confirmPayment = confirm('Login successful! Do you want to proceed with the payment of GH¢100?');
+                    if (confirmPayment) {
+                        // Process payment (you can implement your payment processing logic here)
+                        alert('Payment of GH¢100 successful!');
+                    } else {
+                        alert('Payment cancelled.');
+                    }
+                } else {
+                    alert('Invalid student ID or password. Please try again.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+/*
+h1 {
+    font-size: 32px; 
+    color: #333; 
+    font-weight: bold; 
+    margin-bottom: 20px; 
+    background-color: white; 
+}
+
+
+h2 {
+    font-size: 28px; 
+    color: #555; 
+    font-weight: bold; 
+    margin-bottom: 15px; 
+    background-color: white; 
+
+
+    font-size: 24px; 
+    color: #777; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+    background-color: white; 
+}
+
+h4 {
+    font-size: 20px; 
+    color: #999; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+    background-color: white; 
+}
+
+h5 {
+    font-size: 16px; 
+    color: #aaa; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+    background-color: blue; 
+}*/
+a {
+    color: #007bff; 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: 50% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+h1 {
+    color: white;
+    background-color: tomato;
+
+}
+
+p {
+    color: #666;
+}
+
+
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+form input[type="text"],
+form input[type="date"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+form input[type="file"] {
+    margin-top: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-container {
+
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+button[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.links {
+    background-color: white;
+}
+
+.contacts {
+    background-color: white;
+}
+
+.login-section {
+    background-image: url('kstu.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px; 
+}
+.container {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+header {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+.login-form {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+/* Style for <details> element */
+details {
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    margin-bottom: 15px; /
+  }
+  
+  
+  summary {
+    padding: 10px; 
+    background-color: #f0f0f0; 
+    cursor: pointer; 
+  }
+  
+  
+  details[open] {
+    background-color: #fff; 
+  }
+  
+  
+  summary::-webkit-details-marker {
+    display: none; 
+  }
+  
+  summary::before {
+    content: '▶'; 
+    margin-right: 5px; 
+  }
+  
+  details[open] summary::before {
+    content: '▼'; 
+  }
+  /* Style for generic <div> element */
+div {
+    background-color: #f0f0f0; /* Light gray background color */
+    padding: 20px; /* Add padding */
+    margin-bottom: 20px; /* Add margin bottom for spacing between divs */
+    border-radius: 5px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  }
+  
+  /* Style for specific <div> with class */
+  .container {
+    max-width: 1200px; /* Limit width of container */
+    margin: 0 auto; /* Center container horizontally */
+  }
+  
+  /* Another example of specific <div> with class */
+  .section {
+    background-color: #fff; /* White background color */
+    border: 1px solid #ccc; /* Add border */
+    padding: 20px; /* Add padding */
+  }
+  /* Style for the embed element */
+embed {
+    width: 100%; /* Set the width to fill its container */
+    height: 300px; /* Set a fixed height */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add border radius */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+}
+embed{
+    
+}
